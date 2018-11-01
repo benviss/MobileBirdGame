@@ -233,12 +233,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c9a7f4b3d6c9e4fa91edf34fe13bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 181377401}
   flapTime: 0.15
   flapPower: 150
   glidePercentage: 0.6
   dragCof: 0.001
   restMass: 3
   poopMass: 0
+  endFlapTime: 0
 --- !u!212 &1780272930
 SpriteRenderer:
   m_ObjectHideFlags: 0
