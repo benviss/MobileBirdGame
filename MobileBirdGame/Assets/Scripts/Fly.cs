@@ -135,16 +135,6 @@ public class Fly : MonoBehaviour
 
     }
 
-    private void Glide()
-    {
-        // Calculates counteractive force of gravity - glidePercentage of 1 should be zero grav
-        float scalar = (float) (Time.deltaTime * 9.81f * 59.85 * rb.mass * glidePercentage);
-        //Debug.Log("glidePower: " + scalar);
-
-        rb.AddForce(Vector3.up * scalar);
-    }
-
-
     private Vector3 CalculateAngleAxis()
     {
         Vector3 screenPos = mainCamera.WorldToScreenPoint(transform.position);
